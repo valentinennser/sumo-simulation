@@ -27,6 +27,10 @@
         <device.rerouting.adaptation-interval value="10"/>
     </routing>
 
+    <battery>
+        <device.battery.probability value="1"/>
+    </battery>
+
     <report>
         <verbose value="true"/>
         <duration-log.statistics value="true"/>
