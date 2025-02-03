@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<additional>
+
+    <!-- Charging Stations at Kohlmarkt, Herrengasse & Schauflergasse-->
+
+    <!--
+   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95" endPos="25"
+    id="cS_4952858" lane="4952858" startPos="10"/>
+   <chargingStation chargeDelay="2" chargeInTransit="1" power="200000" efficiency="0.95"
+    endPos="55.76" id="cS_8058876" lane="8058876" startPos="5"/>
+   <chargingStation chargeDelay="2" chargeInTransit="1" power="200000" efficiency="0.95"
+    endPos="55.76" id="cS_888868304" lane="888868304" startPos="5"/>
+    -->
+    <chargingStation id="cS_4998703#0" lane="4998703#0_0" startPos="5" endPos="25" power="500000" />
+    <chargingStation id="cS_4998713#0" lane="4998713#0_0" startPos="5" endPos="25" power="500000" />
+
+</additional>
