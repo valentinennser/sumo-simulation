@@ -1,19 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routes>
     <!-- EV type -->
-    <vType id="electric_car" vClass="passenger" maxSpeed="27" accel="2.6" decel="4.5"
-        length="4.5" minGap="2.5" sigma="0.5" guiShape="passenger"
-        energyCapacity="50" efficiency="0.9" chargingEfficiency="0.95">
-        <param key="has.battery.device" value="true" />
-        <param key="device.battery.energyStored" value="50" />
-        <param key="electric.vehicle" value="true" />
-        <param key="electricity.maximumBatteryCapacity" value="50" />
-        <param key="electricity.energyConsumedPerMeter" value="0.2" />
-    </vType>
+    <vType id="electric_car" minGap="2.50" maxSpeed="29.06" color="white" accel="1.0" decel="1.0" sigma="0.0" emissionClass="Energy/unknown" mass="1830">
+    <param key="has.battery.device" value="true"/>
+    <param key="airDragCoefficient" value="0.35"/>       <!-- https://www.evspecifications.com/en/model/e94fa0 -->
+    <param key="constantPowerIntake" value="100"/>       <!-- observed summer levels -->
+    <param key="frontSurfaceArea" value="2.6"/>          <!-- computed (ht-clearance) * width -->
+    <param key="rotatingMass" value="40"/>               <!-- guesstimate, inspired by PHEMlight5 PC_BEV -->
+    <param key="device.battery.capacity" value="64000"/> <!-- /2 is in kWh -->
+    <param key="maximumPower" value="150000"/>           <!-- website as above -->
+    <param key="propulsionEfficiency" value=".98"/>      <!-- guesstimate value providing closest match to observed -->
+    <param key="radialDragCoefficient" value="0.1"/>     <!-- as above -->
+    <param key="recuperationEfficiency" value=".96"/>    <!-- as above -->
+    <param key="rollDragCoefficient" value="0.01"/>      <!-- as above -->
+    <param key="stoppingThreshold" value="0.1"/>         <!-- as above -->
+</vType>
 
-    <route id="route1" edges="4998703#0 4998703#1"/>
+    <trip id="veh0" type="electric_car" depart="0.00" departLane="best" departSpeed="max" from="270461283" to="165778776"/>
+    <trip id="veh1" type="electric_car" depart="10.97" departLane="best" from="-4952861#3" to="113145683"/>
+    <trip id="veh3" type="electric_car" depart="32.92" departLane="best" from="5930434#0" to="-26154331"/>
+    <trip id="veh4" type="electric_car" depart="43.90" departLane="best" from="1116876278" to="190494839#0"/>
+    <trip id="veh5" type="electric_car" depart="54.87" departLane="best" from="-1247141273" to="-912905972"/>
+    <trip id="veh6" type="electric_car" depart="65.85" departLane="best" departSpeed="max" from="27220131" to="29065101"/>
+    <trip id="veh8" type="electric_car" depart="87.80" departLane="best" from="4583443" to="-1184640625"/>
+    <trip id="veh9" type="electric_car" depart="98.77" departLane="best" from="44028858" to="39314766#0"/>
+    <trip id="veh11" type="electric_car" depart="120.72" departLane="best" departSpeed="max" from="8080526#0" to="176378054#0"/>
+    <trip id="veh13" type="electric_car" depart="142.67" departLane="best" from="4998695#1" to="30018147"/>
+    <trip id="veh14" type="electric_car" depart="153.65" departLane="best" from="44028860" to="-44005501"/>
+    <trip id="veh21" type="electric_car" depart="230.47" departLane="best" departSpeed="max" from="-185242442" to="113296995#1"/>
+    <trip id="veh23" type="electric_car" depart="252.42" departLane="best" departSpeed="max" from="-8080546" to="1096372366"/>
+    <trip id="veh24" type="electric_car" depart="263.40" departLane="best" departSpeed="max" from="375939521#0" to="8072726"/>
+    <trip id="veh26" type="electric_car" depart="285.35" departLane="best" departSpeed="max" from="-26158696" to="43981491"/>
+    <trip id="veh32" type="electric_car" depart="351.20" departLane="best" departSpeed="max" from="-343878884" to="8072740#0"/>
+    <trip id="veh36" type="electric_car" depart="395.10" departLane="best" departSpeed="max" from="26154324" to="778380374#0"/>
+    <trip id="veh37" type="electric_car" depart="406.07" departLane="best" departSpeed="max" from="105771178" to="1128049584#0"/>
+    <trip id="veh38" type="electric_car" depart="417.05" departLane="best" from="947169050" to="26420644#0"/>
+    <trip id="veh42" type="electric_car" depart="460.95" departLane="best" departSpeed="max" from="-172986927#3" to="230483955#0"/>
+    <trip id="veh43" type="electric_car" depart="471.92" departLane="best" from="9226587#0" to="27122129"/>
+    <trip id="veh44" type="electric_car" depart="482.90" departLane="best" departSpeed="max" from="877619596#0" to="662302258#2"/>
+    <trip id="veh47" type="electric_car" depart="515.82" departLane="best" from="1214297263" to="8072751"/>
+    <trip id="veh53" type="electric_car" depart="581.67" departLane="best" departSpeed="max" from="-5930416#1" to="-25950723#1"/>
+    <trip id="veh54" type="electric_car" depart="592.65" departLane="best" from="520614631" to="8072740#3"/>
+    <trip id="veh56" type="electric_car" depart="614.60" departLane="best" departSpeed="max" from="-185196004" to="4997555#0"/>
+    <trip id="veh58" type="electric_car" depart="636.55" departLane="best" departSpeed="max" from="133999725#0" to="29065101"/>
+    <trip id="veh60" type="electric_car" depart="658.50" departLane="best" from="113145641#0" to="1096372366"/>
+    <trip id="veh62" type="electric_car" depart="680.45" departLane="best" departSpeed="max" from="-29065101" to="1336826341#0"/>
+    <trip id="veh63" type="electric_car" depart="691.42" departLane="best" from="9226541#1" to="347015852"/>
+    <trip id="veh65" type="electric_car" depart="713.37" departLane="best" departSpeed="max" from="-25949689" to="113145683"/>
+    <trip id="veh68" type="electric_car" depart="746.30" departLane="best" departSpeed="max" from="-185196004" to="343878884"/>
+    <trip id="veh70" type="electric_car" depart="768.25" departLane="best" from="4998702#0" to="-26154324"/>
+    <trip id="veh72" type="electric_car" depart="790.20" departLane="best" from="8034547" to="29065761"/>
+    <trip id="veh77" type="electric_car" depart="845.07" departLane="best" departSpeed="max" from="91929235#0" to="-26565479"/>
+    <trip id="veh78" type="electric_car" depart="856.05" departLane="best" departSpeed="max" from="105771178" to="185196004"/>
+    <trip id="veh85" type="electric_car" depart="932.87" departLane="best" departSpeed="max" from="877619596#0" to="8072726"/>
+    <trip id="veh88" type="electric_car" depart="965.80" departLane="best" departSpeed="max" from="105771178" to="-25950723#1"/>
+    <trip id="veh89" type="electric_car" depart="976.77" departLane="best" departSpeed="max" from="-9567011#1" to="694681348#3"/>
+    <trip id="veh90" type="electric_car" depart="987.75" departLane="best" departSpeed="max" from="375939521#0" to="4998704"/>
+    <trip id="veh94" type="electric_car" depart="1031.65" departLane="best" departSpeed="max" from="877619596#0" to="26565519"/>
+    <trip id="veh95" type="electric_car" depart="1042.62" departLane="best" departSpeed="max" from="-172986927#3" to="4997572"/>
+    <trip id="veh97" type="electric_car" depart="1064.57" departLane="best" departSpeed="max" from="-26154383" to="8072751"/>
+    <trip id="veh98" type="electric_car" depart="1075.55" departLane="best" departSpeed="max" from="-185242442" to="-877619596#1"/>
+    <trip id="veh101" type="electric_car" depart="1108.47" departLane="best" from="29067898#0" to="1211897198"/>
+    <trip id="veh102" type="electric_car" depart="1119.45" departLane="best" departSpeed="max" from="105771178" to="4997572"/>
+    <trip id="veh103" type="electric_car" depart="1130.42" departLane="best" from="23309134" to="8072726"/>
+    <trip id="veh107" type="electric_car" depart="1174.32" departLane="best" departSpeed="max" from="-665186184" to="4952863"/>
+    <trip id="veh109" type="electric_car" depart="1196.27" departLane="best" departSpeed="max" from="-185196004" to="1096372366"/>
+    <trip id="veh110" type="electric_car" depart="1207.25" departLane="best" departSpeed="max" from="375939521#0" to="8072726"/>
+    <trip id="veh111" type="electric_car" depart="1218.22" departLane="best" from="537176977#0" to="714680571"/>
+    <trip id="veh112" type="electric_car" depart="1229.20" departLane="best" departSpeed="max" from="-8080546" to="-4997590#1"/>
+    <trip id="veh113" type="electric_car" depart="1240.17" departLane="best" from="4997584#1" to="420290632#0"/>
+    <trip id="veh115" type="electric_car" depart="1262.12" departLane="best" from="-28151969" to="-1184640625"/>
+    <trip id="veh116" type="electric_car" depart="1273.10" departLane="best" departSpeed="max" from="469205306" to="1272891358"/>
+    <trip id="veh121" type="electric_car" depart="1327.97" departLane="best" departSpeed="max" from="307641760#0" to="10130315"/>
+    <trip id="veh128" type="electric_car" depart="1404.80" departLane="best" from="116758232" to="-1184640625"/>
+    <trip id="veh129" type="electric_car" depart="1415.77" departLane="best" departSpeed="max" from="-185242442" to="714680571"/>
+    <trip id="veh131" type="electric_car" depart="1437.72" departLane="best" from="27497426" to="4997580#0"/>
+    <trip id="veh132" type="electric_car" depart="1448.70" departLane="best" departSpeed="max" from="-261458722" to="-345649138"/>
+    <trip id="veh133" type="electric_car" depart="1459.67" departLane="best" departSpeed="max" from="-5930416#1" to="7832222"/>
+    <trip id="veh134" type="electric_car" depart="1470.65" departLane="best" from="-44005501" to="662302258#2"/>
+    <trip id="veh140" type="electric_car" depart="1536.50" departLane="best" departSpeed="max" from="469205306" to="714680571"/>
+    <trip id="veh142" type="electric_car" depart="1558.45" departLane="best" departSpeed="max" from="-778380373" to="8072726"/>
+    <trip id="veh149" type="electric_car" depart="1635.27" departLane="best" from="43981491" to="113145683"/>
+    <trip id="veh152" type="electric_car" depart="1668.20" departLane="best" departSpeed="max" from="877619596#0" to="127240496#0"/>
+    <trip id="veh153" type="electric_car" depart="1679.17" departLane="best" departSpeed="max" from="8900171#0" to="27497428"/>
+    <trip id="veh155" type="electric_car" depart="1701.12" departLane="best" departSpeed="max" from="877619596#0" to="745742180"/>
+    <trip id="veh160" type="electric_car" depart="1755.99" departLane="best" from="-113296995#0" to="8072726"/>
+    <trip id="veh162" type="electric_car" depart="1777.94" departLane="best" departSpeed="max" from="345649138" to="351751337"/>
+    <trip id="veh163" type="electric_car" depart="1788.92" departLane="best" departSpeed="max" from="-8080546" to="-26154324"/>
+    <trip id="veh165" type="electric_car" depart="1810.87" departLane="best" departSpeed="max" from="-665186184" to="5930442#1"/>
+    <trip id="veh167" type="electric_car" depart="1832.82" departLane="best" departSpeed="max" from="105771178" to="127240496#0"/>
+    <trip id="veh168" type="electric_car" depart="1843.79" departLane="best" departSpeed="max" from="-25950341#1" to="25949687"/>
+    <trip id="veh170" type="electric_car" depart="1865.74" departLane="best" from="113296995#1" to="127240496#0"/>
+    <trip id="veh171" type="electric_car" depart="1876.72" departLane="best" from="-1187222413" to="29066987"/>
+    <trip id="veh172" type="electric_car" depart="1887.69" departLane="best" from="-28151969" to="26153832#0"/>
+    <trip id="veh174" type="electric_car" depart="1909.64" departLane="best" departSpeed="max" from="133999725#0" to="8024409#0"/>
+    <trip id="veh175" type="electric_car" depart="1920.62" departLane="best" from="237726307" to="26565521"/>
+    <trip id="veh176" type="electric_car" depart="1931.59" departLane="best" departSpeed="max" from="270461283" to="170511032#1"/>
+    <trip id="veh178" type="electric_car" depart="1953.54" departLane="best" departSpeed="max" from="-29065101" to="-165778776"/>
+    <trip id="veh181" type="electric_car" depart="1986.47" departLane="best" departSpeed="max" from="105771178" to="343157907"/>
+    <trip id="veh183" type="electric_car" depart="2008.42" departLane="best" from="29065085" to="-1184640625"/>
+    <trip id="veh186" type="electric_car" depart="2041.34" departLane="best" departSpeed="max" from="23148524" to="-25950723#1"/>
+    <trip id="veh190" type="electric_car" depart="2085.24" departLane="best" departSpeed="max" from="307641760#0" to="26420644#0"/>
+    <trip id="veh191" type="electric_car" depart="2096.22" departLane="best" from="4952878#1" to="29065101"/>
+    <trip id="veh198" type="electric_car" depart="2173.04" departLane="best" from="30322934#5" to="-26154250"/>
+    <trip id="veh199" type="electric_car" depart="2184.02" departLane="best" departSpeed="max" from="105771178" to="29065101"/>
+    <trip id="veh200" type="electric_car" depart="2194.99" departLane="best" departSpeed="max" from="105771178" to="1023937354"/>
+    <trip id="veh202" type="electric_car" depart="2216.94" departLane="best" departSpeed="max" from="26154324" to="364911324"/>
+    <trip id="veh206" type="electric_car" depart="2260.84" departLane="best" departSpeed="max" from="105771178" to="4952863"/>
+    <trip id="veh207" type="electric_car" depart="2271.82" departLane="best" from="25950172#1" to="30018147"/>
+    <trip id="veh211" type="electric_car" depart="2315.72" departLane="best" departSpeed="max" from="105771178" to="4998701"/>
+    <trip id="veh214" type="electric_car" depart="2348.64" departLane="best" from="-1247141273" to="346399778"/>
+    <trip id="veh216" type="electric_car" depart="2370.59" departLane="best" departSpeed="max" from="868062640" to="230483955#0"/>
+    <trip id="veh217" type="electric_car" depart="2381.57" departLane="best" departSpeed="max" from="-343878884" to="170511032#1"/>
+    <trip id="veh218" type="electric_car" depart="2392.54" departLane="best" departSpeed="max" from="349688240" to="230483955#0"/>
+    <trip id="veh219" type="electric_car" depart="2403.52" departLane="best" from="349488863#0" to="5930428#2"/>
+    <trip id="veh222" type="electric_car" depart="2436.44" departLane="best" departSpeed="max" from="27220131" to="4998702#0"/>
+    <trip id="veh223" type="electric_car" depart="2447.42" departLane="best" from="27497426" to="4952869#4"/>
+    <trip id="veh225" type="electric_car" depart="2469.37" departLane="best" departSpeed="max" from="-25950341#1" to="351751337"/>
+    <trip id="veh226" type="electric_car" depart="2480.34" departLane="best" departSpeed="max" from="26088764" to="1116876277"/>
+    <trip id="veh227" type="electric_car" depart="2491.32" departLane="best" from="30322208#2" to="4997572"/>
+    <trip id="veh228" type="electric_car" depart="2502.29" departLane="best" departSpeed="max" from="-26158696" to="30322208#0"/>
+    <trip id="veh229" type="electric_car" depart="2513.27" departLane="best" departSpeed="max" from="345649138" to="-307641760#1"/>
+    <trip id="veh230" type="electric_car" depart="2524.24" departLane="best" departSpeed="max" from="-25949687" to="190494839#0"/>
+    <trip id="veh231" type="electric_car" depart="2535.22" departLane="best" departSpeed="max" from="-5930416#1" to="355120253"/>
+    <trip id="veh232" type="electric_car" depart="2546.19" departLane="best" departSpeed="max" from="8080526#0" to="-237726307"/>
+    <trip id="veh233" type="electric_car" depart="2557.17" departLane="best" departSpeed="max" from="307641760#0" to="-26154324"/>
+    <trip id="veh238" type="electric_car" depart="2612.04" departLane="best" from="116758237" to="229033665#0"/>
+    <trip id="veh242" type="electric_car" depart="2655.94" departLane="best" departSpeed="max" from="270461283" to="5930428#2"/>
+    <trip id="veh244" type="electric_car" depart="2677.89" departLane="best" from="4998703#1" to="8080531#1"/>
+    <trip id="veh245" type="electric_car" depart="2688.87" departLane="best" departSpeed="max" from="375939521#0" to="506998433#1"/>
+    <trip id="veh252" type="electric_car" depart="2765.69" departLane="best" departSpeed="max" from="-9567011#1" to="-190494839#4"/>
+    <trip id="veh254" type="electric_car" depart="2787.64" departLane="best" departSpeed="max" from="-343878884" to="4998733"/>
+    <trip id="veh255" type="electric_car" depart="2798.62" departLane="best" departSpeed="max" from="-8072628#1" to="714680571"/>
+    <trip id="veh258" type="electric_car" depart="2831.54" departLane="best" departSpeed="max" from="-24774407#1" to="43308573#1"/>
+    <trip id="veh259" type="electric_car" depart="2842.52" departLane="best" from="190494839#5" to="4952878#0"/>
+    <trip id="veh265" type="electric_car" depart="2908.37" departLane="best" departSpeed="max" from="25678136#0" to="25949687"/>
+    <trip id="veh266" type="electric_car" depart="2919.34" departLane="best" departSpeed="max" from="345649138" to="170511032#1"/>
+    <trip id="veh269" type="electric_car" depart="2952.27" departLane="best" from="-27368746#1" to="-345649138"/>
+    <trip id="veh270" type="electric_car" depart="2963.24" departLane="best" departSpeed="max" from="-26565521" to="1096372366"/>
+    <trip id="veh272" type="electric_car" depart="2985.19" departLane="best" departSpeed="max" from="8900171#0" to="27122129"/>
+    <trip id="veh273" type="electric_car" depart="2996.17" departLane="best" departSpeed="max" from="-4952863" to="-26565479"/>
+    <trip id="veh274" type="electric_car" depart="3007.14" departLane="best" departSpeed="max" from="-29065101" to="113145683"/>
+    <trip id="veh277" type="electric_car" depart="3040.07" departLane="best" from="30062411" to="-345649138"/>
+    <trip id="veh278" type="electric_car" depart="3051.04" departLane="best" from="4998714#7" to="26158696"/>
+    <trip id="veh280" type="electric_car" depart="3072.99" departLane="best" from="1332155347" to="25950336"/>
+    <trip id="veh282" type="electric_car" depart="3094.94" departLane="best" departSpeed="max" from="-185196004" to="343157907"/>
+    <trip id="veh284" type="electric_car" depart="3116.89" departLane="best" departSpeed="max" from="26088764" to="1324975135"/>
+    <trip id="veh288" type="electric_car" depart="3160.79" departLane="best" departSpeed="max" from="23148524" to="25950341#0"/>
+    <trip id="veh290" type="electric_car" depart="3182.74" departLane="best" departSpeed="max" from="91929235#0" to="1324975164"/>
+    <trip id="veh293" type="electric_car" depart="3215.67" departLane="best" from="29067098" to="-4997590#1"/>
+    <trip id="veh308" type="electric_car" depart="3380.29" departLane="best" departSpeed="max" from="-24774407#1" to="8072751"/>
+    <trip id="veh310" type="electric_car" depart="3402.24" departLane="best" departSpeed="max" from="8080526#0" to="980086104"/>
+    <trip id="veh313" type="electric_car" depart="3435.17" departLane="best" from="1332659462" to="347015852"/>
+    <trip id="veh315" type="electric_car" depart="3457.12" departLane="best" departSpeed="max" from="26154324" to="343878884"/>
+    <trip id="veh318" type="electric_car" depart="3490.04" departLane="best" departSpeed="max" from="-778380373" to="355135033"/>
+    <trip id="veh319" type="electric_car" depart="3501.02" departLane="best" departSpeed="max" from="-4998704" to="8072740#3"/>
+    <trip id="veh322" type="electric_car" depart="3533.94" departLane="best" departSpeed="max" from="105771178" to="26565521"/>
+    <trip id="veh323" type="electric_car" depart="3544.91" departLane="best" departSpeed="max" from="91929235#0" to="35170716"/>
+    <trip id="veh325" type="electric_car" depart="3566.86" departLane="best" departSpeed="max" from="349688240" to="10130315"/>
 
-    <vehicle id="EV_1" type="electric_car" route="route1" depart="0" />
 </routes>
 
     

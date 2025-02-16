@@ -8,7 +8,7 @@
     <!-- Add EV and charging stations-->
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="osm.passenger.trips.xml, ev-routes.rou.xml"/>
+        <route-files value="ev-routes.rou.xml"/>
         <additional-files value="osm.poly.xml.gz, charging-stations.add.xml"/>
 
         <!--
@@ -16,6 +16,13 @@
         <additional-files value="osm.poly.xml.gz, charging-stations.add.xml"/>
         -->
     </input>
+
+    <output>
+        <battery-output value="battery.out.xml"/>
+        <battery-output.precision value="4"/>
+        <device.battery.probability value="1"/>
+        <summary-output value="summary_100.xml"/>
+    </output>
 
     <processing>
         <ignore-route-errors value="true"/>
@@ -26,10 +33,6 @@
         <device.rerouting.adaptation-steps value="18"/>
         <device.rerouting.adaptation-interval value="10"/>
     </routing>
-
-    <battery>
-        <device.battery.probability value="1"/>
-    </battery>
 
     <report>
         <verbose value="true"/>
