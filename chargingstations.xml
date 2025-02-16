@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-02-03 13:02:12 by Eclipse SUMO sumo Version v1_21_0+2163-fe398d3a3bc
--->
-
+<!-- generated on 2025-02-16 17:37:22 by Eclipse SUMO GUI Version v1_21_0+2163-fe398d3a3bc
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
-    <!-- Add EV and charging stations-->
     <input>
         <net-file value="osm.net.xml.gz"/>
         <route-files value="ev-routes.rou.xml"/>
@@ -15,11 +12,10 @@
     <output>
         <battery-output value="battery.out.xml"/>
         <battery-output.precision value="4"/>
-        <device.battery.probability value="1"/>
-        <summary-output value="summary_100.xml"/>
         <chargingstations-output value="chargingstations.xml"/>
+        <summary-output value="summary_100.xml"/>
     </output>
-    
+
     <processing>
         <ignore-route-errors value="true"/>
         <tls.actuated.jam-threshold value="30"/>
@@ -32,13 +28,28 @@
 
     <report>
         <verbose value="true"/>
-        <duration-log.statistics value="true"/>
         <log value="sumo_debug.log"/>
+        <duration-log.statistics value="true"/>
         <no-step-log value="true"/>
     </report>
+
+    <battery>
+        <device.battery.probability value="1"/>
+    </battery>
+
+    <traci_server>
+        <remote-port value="61419"/>
+    </traci_server>
 
     <gui_only>
         <gui-settings-file value="osm.view.xml"/>
     </gui_only>
 
 </sumoConfiguration>
+-->
+
+<chargingstations-export>
+    <chargingStation id="cS_-364911324" totalEnergyCharged="0.00" chargingSteps="0"/>
+    <chargingStation id="cS_4998703#0" totalEnergyCharged="0.00" chargingSteps="0"/>
+    <chargingStation id="cS_4998713#0" totalEnergyCharged="0.00" chargingSteps="0"/>
+</chargingstations-export>
