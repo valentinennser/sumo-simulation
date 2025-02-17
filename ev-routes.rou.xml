@@ -7,7 +7,7 @@
     <param key="constantPowerIntake" value="100"/>       <!-- observed summer levels -->
     <param key="frontSurfaceArea" value="2.6"/>          <!-- computed (ht-clearance) * width -->
     <param key="rotatingMass" value="40"/>               <!-- guesstimate, inspired by PHEMlight5 PC_BEV -->
-    <param key="device.battery.capacity" value="6000"/> <!-- /2 is in kWh -->
+    <param key="device.battery.actualBatteryCapacity" value="1000"/>           <!-- website as above -->
     <param key="maximumPower" value="150000"/>           <!-- website as above -->
     <param key="propulsionEfficiency" value=".98"/>      <!-- guesstimate value providing closest match to observed -->
     <param key="radialDragCoefficient" value="0.1"/>     <!-- as above -->
@@ -17,11 +17,11 @@
 
     <!-- Stationfinder Device -->
     <param key="has.stationfinder.device" value="true"/>
-    <param key="device.stationfinder.needToChargeLevel" value="0.9"/>
-    <param key="device.stationfinder.saturatedChargeLevel" value="0.8"/>
-    <param key="device.stationfinder.radius" value="180"/>
+    <param key="device.stationfinder.needToChargeLevel" value="0.7"/>
+    <param key="device.stationfinder.saturatedChargeLevel" value="0.9"/>
+    <param key="device.stationfinder.radius" value="1000000"/>
     <param key="device.stationfinder.emptyThreshold" value="0.05"/>
-    <param key="device.stationfinder.rescueAction" value="remove"/>
+    <param key="device.stationfinder.rescueAction" value="tow"/>
 </vType>
 
     <trip id="veh0" type="electric_car" depart="0.00" departLane="best" departSpeed="max" from="270461283" to="165778776"/>
