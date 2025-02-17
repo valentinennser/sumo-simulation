@@ -6,82 +6,82 @@
     <!--
    <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95" endPos="25"
     id="cS_4952858" lane="4952858" startPos="10"/>
-   <chargingStation chargeDelay="2" chargeInTransit="1" power="200000" efficiency="0.95"
+   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95"
     endPos="55.76" id="cS_8058876" lane="8058876" startPos="5"/>
-   <chargingStation chargeDelay="2" chargeInTransit="1" power="200000" efficiency="0.95"
+   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95"
     endPos="55.76" id="cS_888868304" lane="888868304" startPos="5"/>
       -->
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_27" lane="26257143_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_27" lane="26257143_0" startPos="10"/>
     <parkingArea id="pa_Schottenring_27" lane="26257143_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_16" lane="30072789#0_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_16" lane="30072789#0_0" startPos="10"/>
     <parkingArea id="pa_Schottenring_16" lane="30072789#0_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_11" lane="30146816#2_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_11" lane="30146816#2_0" startPos="10"/>
     <parkingArea id="pa_Schottenring_11" lane="30146816#2_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="154000" efficiency="0.95" endPos="30" id="cS_Freyung" lane="28007162#2_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="154000" efficiency="0.95" endPos="30" id="cS_Freyung" lane="28007162#2_0" startPos="10"/>
     <parkingArea id="pa_Freyung" lane="28007162#2_0" startPos="10" endPos="30" roadsideCapacity="14" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="33000" efficiency="0.95" endPos="30" id="cS_Concordiaplatz" lane="25943352#0_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="33000" efficiency="0.95" endPos="30" id="cS_Concordiaplatz" lane="25943352#0_0" startPos="10"/>
     <parkingArea id="pa_Concordiaplatz" lane="25943352#0_0" startPos="10" endPos="30" roadsideCapacity="3" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="220000" efficiency="0.95" endPos="30" id="cS_Morzinplatz" lane="420290639_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="220000" efficiency="0.95" endPos="30" id="cS_Morzinplatz" lane="420290639_0" startPos="10"/>
     <parkingArea id="pa_Morzinplatz" lane="420290639_0" startPos="10" endPos="30" roadsideCapacity="20" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="154000" efficiency="0.95" endPos="30" id="cS_Universitaetsring_1" lane="29065909#2_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="154000" efficiency="0.95" endPos="30" id="cS_Universitaetsring_1" lane="29065909#2_0" startPos="10"/>
     <parkingArea id="pa_Universitaetsring_1" lane="29065909#2_0" startPos="10" endPos="30" roadsideCapacity="14" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="44000" efficiency="0.95" endPos="30" id="cS_JosefMeinradPlatz" lane="4583445#0_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="44000" efficiency="0.95" endPos="30" id="cS_JosefMeinradPlatz" lane="4583445#0_0" startPos="10"/>
     <parkingArea id="pa_JosefMeinradPlatz" lane="4583445#0_0" startPos="10" endPos="30" roadsideCapacity="4" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Opernring_17" lane="91929235_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Opernring_17" lane="91929235_0" startPos="10"/>
     <parkingArea id="pa_Opernring_17" lane="91929235_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Babenbergerstraße_5" lane="665186184_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Babenbergerstraße_5" lane="665186184_0" startPos="10"/>
     <parkingArea id="pa_Babenbergerstraße_5" lane="665186184_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Elisabethstraße_16" lane="527150484_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Elisabethstraße_16" lane="527150484_0" startPos="10"/>
     <parkingArea id="pa_Elisabethstraße_16" lane="527150484_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="66000" efficiency="0.95" endPos="30" id="cS_Kärntnerstraße_51" lane="31247027#0_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="66000" efficiency="0.95" endPos="30" id="cS_Kärntnerstraße_51" lane="31247027#0_0" startPos="10"/>
     <parkingArea id="pa_Kärntnerstraße_51" lane="31247027#0_0" startPos="10" endPos="30" roadsideCapacity="6" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Mahlerstraße_12" lane="1264771651_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Mahlerstraße_12" lane="1264771651_0" startPos="10"/>
     <parkingArea id="pa_Mahlerstraße_12" lane="1264771651_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Schubertring_14" lane="1280907499_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schubertring_14" lane="1280907499_0" startPos="10"/>
     <parkingArea id="pa_Schubertring_14" lane="1280907499_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Johannesgasse_33" lane="-12276040#3_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Johannesgasse_33" lane="-12276040#3_0" startPos="10"/>
     <parkingArea id="pa_Johannesgasse_33" lane="-12276040#3_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Schubertring_1" lane="26945906_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schubertring_1" lane="26945906_0" startPos="10"/>
     <parkingArea id="pa_Schubertring_1" lane="26945906_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Beethovenplatz_3" lane="5930419_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Beethovenplatz_3" lane="5930419_0" startPos="10"/>
     <parkingArea id="pa_Beethovenplatz_3" lane="5930419_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Parkring_18" lane="1280907225#1_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Parkring_18" lane="1280907225#1_0" startPos="10"/>
     <parkingArea id="pa_Parkring_18" lane="1280907225#1_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Parkring_12" lane="30322934#1_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Parkring_12" lane="30322934#1_0" startPos="10"/>
     <parkingArea id="pa_Parkring_12" lane="30322934#1_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="66000" efficiency="0.95" endPos="30" id="cS_Hegelgasse_1" lane="-1198882917_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="66000" efficiency="0.95" endPos="30" id="cS_Hegelgasse_1" lane="-1198882917_0" startPos="10"/>
     <parkingArea id="pa_Hegelgasse_1" lane="-1198882917_0" startPos="10" endPos="30" roadsideCapacity="6" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="28000" efficiency="0.95" endPos="30" id="cS_Cobdengasse_2" lane="-8072641_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="28000" efficiency="0.95" endPos="30" id="cS_Cobdengasse_2" lane="-8072641_0" startPos="10"/>
     <parkingArea id="pa_Cobdengasse_2" lane="-8072641_0" startPos="10" endPos="30" roadsideCapacity="4" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Stubenring_22" lane="26420444#7_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Stubenring_22" lane="26420444#7_0" startPos="10"/>
     <parkingArea id="pa_Stubenring_22" lane="26420444#7_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="22000" efficiency="0.95" endPos="30" id="cS_Stubenring_1" lane="1205184488_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Stubenring_1" lane="1205184488_0" startPos="10"/>
     <parkingArea id="pa_Stubenring_1" lane="1205184488_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20"/>
 
-    <chargingStation chargeInTransit="1" power="44000" efficiency="0.95" endPos="30" id="cS_Cochplatz" lane="352684735#2_0" startPos="10"/>
+    <chargingStation chargeInTransit="0" power="44000" efficiency="0.95" endPos="30" id="cS_Cochplatz" lane="352684735#2_0" startPos="10"/>
     <parkingArea id="pa_Cochplatz" lane="352684735#2_0" startPos="10" endPos="30" roadsideCapacity="4" angle="90" length="20"/>
 
 </additional>  

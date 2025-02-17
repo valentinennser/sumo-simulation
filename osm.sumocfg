@@ -11,6 +11,14 @@
         <additional-files value="charging-stations.add.xml, osm.poly.xml.gz"/>
     </input>
 
+    <output>
+        <battery-output value="battery.out.xml"/>
+        <battery-output.precision value="4"/>
+        <device.battery.probability value="1"/>
+        <summary-output value="summary_100.xml"/>
+        <chargingstations-output value="chargingstations.xml"/>
+    </output>
+
     <processing>
         <ignore-route-errors value="true"/>
         <tls.actuated.jam-threshold value="30"/>
