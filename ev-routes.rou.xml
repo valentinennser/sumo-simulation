@@ -7,7 +7,7 @@
     <param key="constantPowerIntake" value="100"/>       <!-- observed summer levels -->
     <param key="frontSurfaceArea" value="2.6"/>          <!-- computed (ht-clearance) * width -->
     <param key="rotatingMass" value="40"/>               <!-- guesstimate, inspired by PHEMlight5 PC_BEV -->
-    <param key="device.battery.actualBatteryCapacity" value="1000"/>           <!-- website as above -->
+    <param key="device.battery.capacity" value="6000"/> <!-- /2 is in kWh -->
     <param key="maximumPower" value="150000"/>           <!-- website as above -->
     <param key="propulsionEfficiency" value=".98"/>      <!-- guesstimate value providing closest match to observed -->
     <param key="radialDragCoefficient" value="0.1"/>     <!-- as above -->
