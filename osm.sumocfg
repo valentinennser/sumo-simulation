@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-02-03 13:02:12 by Eclipse SUMO sumo Version v1_21_0+2163-fe398d3a3bc
+<!-- generated on 2025-02-17 17:09:21 by Eclipse SUMO sumo Version v1_21_0+2163-fe398d3a3bc
 -->
 
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
-    <!-- Add EV and charging stations-->
     <input>
         <net-file value="osm.net.xml.gz"/>
         <route-files value="ev-routes.rou.xml"/>
-        <additional-files value="osm.poly.xml.gz, charging-stations.add.xml"/>
+        <additional-files value="charging-stations.add.xml, osm.poly.xml.gz"/>
     </input>
 
-    <output>
-        <battery-output value="battery.out.xml"/>
-        <battery-output.precision value="4"/>
-        <device.battery.probability value="1"/>
-        <summary-output value="summary_100.xml"/>
-        <chargingstations-output value="chargingstations.xml"/>
-    </output>
-    
     <processing>
         <ignore-route-errors value="true"/>
         <tls.actuated.jam-threshold value="30"/>
@@ -33,7 +24,6 @@
     <report>
         <verbose value="true"/>
         <duration-log.statistics value="true"/>
-        <log value="sumo_debug.log"/>
         <no-step-log value="true"/>
     </report>
 
