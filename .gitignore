@@ -14,3 +14,6 @@ __pycache__/
 # Ignore log files and temporary files
 *.log
 *.tmp
+
+new_key
+new_key.pub
