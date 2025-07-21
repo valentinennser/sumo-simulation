@@ -3,25 +3,51 @@
     <!-- EV type -->
     <vType id="electric_car" minGap="2.50" maxSpeed="29.06" color="white" accel="1.0" decel="1.0" sigma="0.0" emissionClass="Energy/unknown" mass="1830">
     <param key="has.battery.device" value="true"/>
+    <param key="has.stationfinder.device" value="true"/>
+    <param key="device.stationfinder.verbose" value="false"/>
     <param key="airDragCoefficient" value="0.35"/>       <!-- https://www.evspecifications.com/en/model/e94fa0 -->
     <param key="constantPowerIntake" value="100"/>       <!-- observed summer levels -->
     <param key="frontSurfaceArea" value="2.6"/>          <!-- computed (ht-clearance) * width -->
     <param key="rotatingMass" value="40"/>               <!-- guesstimate, inspired by PHEMlight5 PC_BEV -->
     <param key="device.battery.capacity" value="6000"/> <!-- /2 is in kWh -->
+    <param key="device.battery.chargeLevel" value="1000"/>
     <param key="maximumPower" value="150000"/>           <!-- website as above -->
     <param key="propulsionEfficiency" value=".98"/>      <!-- guesstimate value providing closest match to observed -->
     <param key="radialDragCoefficient" value="0.1"/>     <!-- as above -->
     <param key="recuperationEfficiency" value=".96"/>    <!-- as above -->
     <param key="rollDragCoefficient" value="0.01"/>      <!-- as above -->
     <param key="stoppingThreshold" value="0.1"/>         <!-- as above -->
+    <param key="device.battery.tripAwareCharging" value="true"/>
 
     <!-- Stationfinder Device -->
-    <param key="has.stationfinder.device" value="true"/>
     <param key="device.stationfinder.needToChargeLevel" value="0.4"/>
     <param key="device.stationfinder.saturatedChargeLevel" value="0.9"/>
     <param key="device.stationfinder.radius" value="1000000"/>
-    <param key="device.stationfinder.emptyThreshold" value="0.05"/>
+    <param key="device.stationfinder.emptyThreshold" value="0.1"/>
     <param key="device.stationfinder.rescueAction" value="remove"/>
+    <param key="device.stationfinder.rescueTime" value="1800"/>
+    <param key="device.stationfinder.reserveFactor" value="1.1"/>
+    <param key="device.stationfinder.maxEuclideanDistance" value="-1"/>
+    <param key="device.stationfinder.repeat" value="1"/>
+    <param key="device.stationfinder.maxChargePower" value="100000"/>
+    <param key="device.stationfinder.waitForCharge" value="600"/>
+    <param key="device.stationfinder.replacePlannedStop" value="0"/>
+    <param key="device.stationfinder.maxDistanceToReplacedStop" value="300"/>
+    <param key="device.stationfinder.chargingStrategy" value="none"/>
+    <param key="device.stationfinder.opportunisticChargeLevel" value="0"/>
+    <param key="device.stationfinder.minOpportunityDuration" value="3600"/>
+    <param key="device.stationfinder.checkEnergyForRoute" value="false"/>
+    <param key="device.stationfinder.useParkingAreas" value="true"/>
+
+    <param key="device.stationfinder.charging.capacity.weight" value="0"/>
+    <param key="device.stationfinder.charging.absfreespace.weight" value="0"/>
+    <param key="device.stationfinder.charging.relfreespace.weight" value="0"/>
+    <param key="device.stationfinder.charging.distanceto.weight" value="0"/>
+    <param key="device.stationfinder.charging.timeto.weight" value="1"/>
+    <param key="device.stationfinder.charging.distancefrom.weight" value="0"/>
+    <param key="device.stationfinder.charging.timefrom.weight" value="1"/>
+    <param key="device.stationfinder.charging.chargingTime.weight" value="1"/>
+    <param key="device.stationfinder.charging.waitingTime.weight" value="1"/>
 </vType>
 
     <trip id="veh0" type="electric_car" depart="0.00" departLane="best" from="355985162#3" to="-1257983271"/>
