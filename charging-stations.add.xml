@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <additional>
 
-    <!-- Charging Stations at Kohlmarkt, Herrengasse & Schauflergasse-->
-
-    <!--
-   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95" endPos="25"
-    id="cS_4952858" lane="4952858" startPos="10"/>
-   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95"
-    endPos="55.76" id="cS_8058876" lane="8058876" startPos="5"/>
-   <chargingStation chargeDelay="2" chargeInTransit="0" power="200000" efficiency="0.95"
-    endPos="55.76" id="cS_888868304" lane="888868304" startPos="5"/>
-      -->
+    <!-- Charging Stations-->
 
     <parkingArea id="pa_Schottenring_27" lane="26257143_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20" onRoad="false"/>
     <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Schottenring_27" lane="26257143_0" startPos="10" parkingArea="pa_Schottenring_27"/>
@@ -648,4 +639,7 @@
     <parkingArea id="pa_Diepoldplatz" lane="4996497_0" startPos="10" endPos="30" roadsideCapacity="2" angle="90" length="20" onRoad="false"/>
     <chargingStation chargeInTransit="0" power="22000" efficiency="0.95" endPos="30" id="cS_Diepoldplatz" lane="4996497_0" startPos="10" parkingArea="pa_Diepoldplatz"/>
 
+
+<!-- Lane Detectors-->
+    <laneAreaDetector id="lad_1" lane="-4996482#2_0" pos="10" endPos="30" friendlyPos="false" file="lane_detection.xml"/>
 </additional>  

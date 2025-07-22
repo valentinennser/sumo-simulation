@@ -18,6 +18,8 @@
         <summary-output value="summary_100.xml"/>
         <chargingstations-output value="chargingstations.xml"/>
         <fcd-output value="fcd-output.xml"/>
+        <tripinfo-output value="trip-output.xml"/>
+        <statistic-output value="statistic-output.xml"/>
     </output>
 
     <processing>

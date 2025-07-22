@@ -19,6 +19,8 @@
     <param key="stoppingThreshold" value="0.1"/>         <!-- as above -->
     <param key="device.battery.tripAwareCharging" value="false"/>
     <param key="has.device.stop" value="true"/>
+    <param key="device.rerouting.verbose" value="true"/>
+
 
 
     <!-- Stationfinder Device -->
