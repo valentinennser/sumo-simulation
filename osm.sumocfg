@@ -17,11 +17,13 @@
         <device.battery.probability value="1"/>
         <summary-output value="summary_100.xml"/>
         <chargingstations-output value="chargingstations.xml"/>
+        <fcd-output value="fcd-output.xml"/>
     </output>
 
     <processing>
         <ignore-route-errors value="true"/>
         <tls.actuated.jam-threshold value="30"/>
+        <collision.action value="none"/>
     </processing>
 
     <routing>
