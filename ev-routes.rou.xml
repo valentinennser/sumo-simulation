@@ -34,9 +34,9 @@
     <param key="device.stationfinder.maxEuclideanDistance" value="-1"/>
     <param key="device.stationfinder.repeat" value="1"/>
     <param key="device.stationfinder.maxChargePower" value="100000"/>
-    <param key="device.stationfinder.waitForCharge" value="600"/>
+    <param key="device.stationfinder.waitForCharge" value="300"/>
     <param key="device.stationfinder.replacePlannedStop" value="1"/>
-    <param key="device.stationfinder.maxDistanceToReplacedStop" value="300"/>
+    <param key="device.stationfinder.maxDistanceToReplacedStop" value="3000"/>
     <param key="device.stationfinder.chargingStrategy" value="none"/>
     <param key="device.stationfinder.opportunisticChargeLevel" value="0"/>
     <param key="device.stationfinder.minOpportunityDuration" value="3600"/>
@@ -44,14 +44,16 @@
     <param key="device.stationfinder.useParkingAreas" value="true"/>
 
     <param key="device.stationfinder.charging.capacity.weight" value="0"/>
-    <param key="device.stationfinder.charging.absfreespace.weight" value="0"/>
-    <param key="device.stationfinder.charging.relfreespace.weight" value="0"/>
-    <param key="device.stationfinder.charging.distanceto.weight" value="0"/>
-    <param key="device.stationfinder.charging.timeto.weight" value="1"/>
-    <param key="device.stationfinder.charging.distancefrom.weight" value="0"/>
-    <param key="device.stationfinder.charging.timefrom.weight" value="1"/>
-    <param key="device.stationfinder.charging.chargingTime.weight" value="1"/>
+    <param key="device.stationfinder.charging.absfreespace.weight" value="0.5"/>
+    <param key="device.stationfinder.charging.relfreespace.weight" value="0.5"/>
     <param key="device.stationfinder.charging.waitingTime.weight" value="1"/>
+    <param key="device.stationfinder.charging.timeto.weight" value="0"/>
+    <param key="device.stationfinder.charging.distancefrom.weight" value="0"/>
+    <param key="device.stationfinder.charging.distanceto.weight" value="0"/>
+    <param key="device.stationfinder.charging.timefrom.weight" value="0"/>
+    <param key="device.stationfinder.charging.chargingTime.weight" value="0"/>
+    <param key="device.stationfinder.randomFactor" value="0.8"/>
+
 </vType>
 
     <trip id="veh0" type="electric_car" depart="0.00" departLane="best" from="355985162#3" to="-1257983271"/>
