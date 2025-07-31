@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <routes>
     
-    <vType id="electric_car" minGap="2.50" maxSpeed="29.06" color="white" accel="1.0" decel="1.0" sigma="0.0" emissionClass="Energy/unknown" mass="1830">
+<vType id="electric_car" minGap="2.50" maxSpeed="29.06" color="white" accel="1.0" decel="1.0" sigma="0.0" emissionClass="Energy/unknown" mass="1830">
     <param key="has.battery.device" value="true" />
     <param key="has.stationfinder.device" value="true" />
     <param key="device.stationfinder.verbose" value="true" />

@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="ev-routes.rou.xml"/>
+        <route-files value="ev-route-suv.rou.xml"/>
         <additional-files value="charging-stations.add.xml, osm.poly.xml.gz"/>
     </input>
 

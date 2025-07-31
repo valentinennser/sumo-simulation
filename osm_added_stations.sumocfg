@@ -3,8 +3,8 @@
 
     <input>
         <net-file value="osm.net.xml.gz" />
-        <route-files value="ev-routes.rou.xml" />
-        <additional-files value="charging-stations-ef7da9.add.xml,osm.poly.xml.gz" />
+        <route-files value="ev-route-suv.rou.xml" />
+        <additional-files value="charging-stations-bcd1fd.add.xml,osm.poly.xml.gz" />
     </input>
 
     <output>
@@ -14,8 +14,8 @@
         <summary-output value="summary_100.xml" />
         <chargingstations-output value="chargingstations-added.xml" />
         <fcd-output value="fcd-output.xml" />
-        <tripinfo-output value="trip-output-added.xml" />
-        <statistic-output value="statistic-output-added.xml" />
+        <tripinfo-output value="trip-output-added.xml"/>
+        <statistic-output value="statistic-output-added.xml"/>
     </output>
 
     <processing>
